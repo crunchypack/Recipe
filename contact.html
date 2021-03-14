@@ -37,16 +37,16 @@
 
                 <div class="contact-field">
                     <label>Title</label>
-                    <input type="text" name="dish" id="dish" class="contact-form">
+                    <input type="text" name="dish" id="dish" class="contact-form" required>
                 </div>
                 <div class="contact-field">
                     <label for="contactIng">Ingredients</label>
-                    <textarea name="ingredients" id="contactIng" cols="20" rows="15"></textarea>
+                    <textarea name="ingredients" id="contactIng" cols="20" rows="15" required></textarea>
 
                 </div>
                 <div class="contact-field">
                     <label for="ref">Website</label>
-                    <input type="text" name="ref" id="ref"
+                    <input type="text" name="ref" id="ref" required placeholder="http(s)://"
                         pattern="^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$">
                 </div>
                 <div class="contact-field"><label class="hidden" id="formres"></label></div>

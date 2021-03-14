@@ -233,6 +233,9 @@ th {
   text-align: center;
   color: #a80b0b;
 }
+.incorr{
+  border-color: #f3333383;
+}
 footer {
   display: flex;
   justify-content: space-between;
