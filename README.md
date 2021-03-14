@@ -19,3 +19,7 @@ Other than AJAX request the JavaScript is used to handle formdata and manipulate
 
 ## HTML
 The markup is based on simple sketches and Recipe Puppy arguments and validated using https://validator.w3.org/
+
+## Links
+Github : https://github.com/crunchypack/Recipe
+Live site : https://lobonode.ddns.net/recipes
