@@ -34,28 +34,22 @@ function saveFile(e) {
           dish.value = "";
           ingField.value = "";
           web.value = "";
-          res.setAttribute("class", "succes");
+          res.setAttribute("class", "success");
           res.innerHTML = "Recipe added!";
+          return;
         } else if (data.code == 11000) {
           res.setAttribute("class", "failure");
           res.innerHTML = "Recipe has been sent before!";
+          return;
         } else {
           res.setAttribute("class", "failure");
           res.innerHTML = "Something went wrong, try again later.";
+          return;
         }
       });
   } else {
     res.setAttribute("class", "failure");
     res.innerHTML = "Please fill in the form correctly";
-    if (title == "") {
-      dish.setAttribute("class", "incorr");
-    }
-    if (ingredients == "") {
-      ingField.setAttribute("class", "incorr");
-    }
-    if (website == "") {
-      web.setAttribute("class", "incorr");
-    }
   }
 }
 let form = document.getElementById("contact-form");
@@ -64,4 +58,7 @@ let dish = document.getElementById("dish");
 let ingField = document.getElementById("contactIng");
 let web = document.getElementById("ref");
 let res = document.getElementById("formres");
+dish.classList.remove("incorr");
+ingField.classList.remove("incorr");
+web.classList.remove("incorr");
 form.addEventListener("submit", saveFile, true);
