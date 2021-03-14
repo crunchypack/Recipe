@@ -4,9 +4,6 @@
  */
 function saveFile(e) {
   e.preventDefault();
-  let reg = new RegExp(
-    "^(http://www.|https://www.|http://|https://)?[a-z0-9]+([-.]{1}[a-z0-9]+)*.[a-z]{2,5}(:[0-9]{1,5})?(/.*)?$"
-  );
   let info = e.target;
   let title = info[0].value;
   let ingredients = info[1].value;
@@ -22,7 +19,7 @@ function saveFile(e) {
         ingredients: ingredients,
         website: website,
       };
-      console.log(data);
+
       fetch(uri + "recipe", {
         method: "POST",
         headers: headers,
@@ -59,7 +56,7 @@ function saveFile(e) {
         message: ingredients,
         email: website,
       };
-      console.log(data);
+
       fetch(uri + "message", {
         method: "POST",
         headers: headers,
