@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Recipes for you</title>
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="head-container">
+            <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="container">
+        <form id="form">
+            <div class="freeQuery">
+                <input type="text" class="qSearch" placeholder="What do you want to cook?">
+            </div>
+            <div id="ingredients">
+                <div id="addIngredients" class="gray" onclick="addIng()">Add ingredients</div>
+                <div class="ingredient">
+                    <label for="exclude1">Exclude</label><input type="checkbox" id="exclude1"><input type="text"
+                        class="iSearch" id="iSearch1" placeholder="One ingredient per row">
+                </div>
+
+            </div>
+            <div class="button">
+                <input type="submit" value="Search">
+            </div>
+        </form>
+        <div id="result">
+
+        </div>
+    </div>
+    <footer>
+        <div class="info">Simon Lobo</div>
+        <div class="api">Api <a href="http://www.recipepuppy.com/" target="_blank">http://www.recipepuppy.com/</a></div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

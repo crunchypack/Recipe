@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Recipes for you | Contact</title>
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="head-container">
+            <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="container">
+        <div class="contact">
+            <h2>Submit your recipe</h2>
+            <p>Do you have a recipe you would like to submit?</p>
+        </div>
+        <div class="form-contact">
+            <form id="contact-form">
+
+                <div class="contact-field">
+                    <label>Title</label>
+                    <input type="text" name="dish" id="dish" class="contact-form">
+                </div>
+                <div class="contact-field">
+                    <label for="ingredients">Ingredients</label>
+                    <textarea name="ingredients" id="contactIng" cols="20" rows="15"></textarea>
+
+                </div>
+                <div class="contact-field">
+                    <label for="ref">Website</label>
+                    <input type="text" name="ref" id="ref"
+                        pattern="^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$">
+                </div>
+                <div class="contact-field"><label class="hidden" id="formres"></label></div>
+
+                <div class="button-container"><input type="submit" value="Submit"></div>
+
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="info">Simon Lobo</div>
+        <div class="api">Api <a href="http://www.recipepuppy.com/" target="_blank">http://www.recipepuppy.com/</a></div>
+    </footer>
+    <script src="js/contact.js"></script>
+</body>
+
+</html>
