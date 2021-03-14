@@ -29,12 +29,20 @@
     </header>
     <div id="container">
         <div class="contact">
-            <h2>Submit your recipe</h2>
+            <h2>Submit your recipe or message us</h2>
             <p>Do you have a recipe you would like to submit?</p>
         </div>
         <div class="form-contact">
-            <form id="contact-form">
+            <div class="select-field">
+                <label for="type">Choose form:</label>
 
+                <select name="type" id="type">
+                    <option value="recipe" selected>Recipe</option>
+                    <option value="msg">Message</option>
+                </select>
+
+            </div>
+            <form id="contact-form">
                 <div class="contact-field">
                     <label>Title</label>
                     <input type="text" name="dish" id="dish" class="contact-form" required>

@@ -173,6 +173,10 @@ th {
   padding: 0.5rem;
   text-align: left;
 }
+.select-field{
+  width:50%;
+  margin: auto;
+}
 .contact {
   width: 60%;
   margin: 1% auto;
