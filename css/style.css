@@ -12,9 +12,7 @@ a {
   text-decoration: none;
   color: #575656;
 }
-a:visited {
-  color: #333131;
-}
+
 a:hover {
   color: #cc9900;
 }
