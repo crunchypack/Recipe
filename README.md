@@ -22,7 +22,7 @@ The markup is based on simple sketches and Recipe Puppy arguments and validated 
 
 ## Links
 Github : https://github.com/crunchypack/Recipe
-Live site : https://lobonode.ddns.net/recipes
+Live site : https://lobonode.ddns.net/Recipe
 
 ## API
 
