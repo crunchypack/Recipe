@@ -23,3 +23,10 @@ The markup is based on simple sketches and Recipe Puppy arguments and validated 
 ## Links
 Github : https://github.com/crunchypack/Recipe
 Live site : https://lobonode.ddns.net/recipes
+
+## API
+
+Of course the issues with the API did not end after I finished the project. After uploading the site to my webserver I was reminded of another problem: "Mixed active content".
+Since the API server is delivering via HTTP and my webserver delivers via HTTPS the API content gets blocked. So in order to use the site for now is to download the files and run them locally. Github pages are also delivered on HTTPS.
+
+I've tried to add https://cors-anywhere.herokuapp.com/ to use as proxy but it seems to be temporary. So I will only use it on the live site.
