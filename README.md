@@ -1,7 +1,7 @@
 # Recipe
 Website that brings you recipes based on ingredients. You can search using any keyword, ingredients or both. 
 
-##AJAX
+## AJAX
 
 The Recipe Puppy api doesn't seem to be actually open for public use since the owner hasn't activated CORS headers. Changing the API could have been a way to go, but most of the job was already done before I noticed.
 JavaScript fetch function would not work so I had to use XMLHttpRequest. But I figured out later that it worked due to me having my extension for CORS activated. 
